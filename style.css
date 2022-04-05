@@ -17,7 +17,6 @@ a {
 
 .container>* {
     padding: 20px;
-    border: 1px solid;
 }
 
 .header {
@@ -29,6 +28,12 @@ a {
 .content {
     grid-area: content;
 }
+
+.accordion {
+    color: black;
+}
+
+
 
 .content2 {
     grid-area: content;
