@@ -1,0 +1,5 @@
+Se reducieron el tamano de las imagenes un 66%
+Se agregaron keywords "fotografo, foto, fotografia, argentina, eventos, sociales, casamiento, 15, cumpleaños"
+Se le agrego el title correspondiente a cada pagina
+Se agrego descripciones distintas a cada pagina
+Se ordenaron jerarquicamente los h1 h2 etc (tengo muy pocos)

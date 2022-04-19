@@ -1,9 +1,42 @@
-.grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+$estilos: (
+    color: #03afff,
+    centro: center,
+    fuente: 30px,
+    displayG: grid,
+    displayF: flex,
+);
 
-    background-color: #03afff;
+.general {
+    font-size: 30px;
+    text-align: center;
+    color: blueviolet;
+}
+
+.especial {
+    @extend .general;
+    border: 1px solid wheat;
+    color: red;
+}
+
+@mixin sizes ($grid-column, $grid-row) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+}
+
+.wide {
+    @include sizes(2 span, 0)
+}
+
+.tall {
+    @include sizes(0, 2 span)
+}
+
+.grid-item {
+    display: map-get($estilos,displayF);
+    align-items: map-get($estilos,centro);
+    justify-content: map-get($estilos,centro);
+
+    background-color: map-get($estilos,color);
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
 
@@ -25,13 +58,7 @@
     grid-auto-flow: dense;
 }
 
-.wide {
-    grid-column: span 2;
-}
 
-.tall {
-    grid-row: span 2;
-}
 
 body {
     margin: 0;

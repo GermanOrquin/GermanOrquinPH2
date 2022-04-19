@@ -1,3 +1,20 @@
+.general, .especial {
+  font-size: 30px;
+  text-align: center;
+  color: blueviolet; }
+
+.especial {
+  border: 1px solid wheat;
+  color: red; }
+
+.wide {
+  grid-column: 2 span;
+  grid-row: 0; }
+
+.tall {
+  grid-column: 0;
+  grid-row: 2 span; }
+
 .grid-item {
   display: flex;
   align-items: center;
@@ -19,12 +36,6 @@
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense; }
-
-.wide {
-  grid-column: span 2; }
-
-.tall {
-  grid-row: span 2; }
 
 body {
   margin: 0;
